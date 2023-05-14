@@ -1,0 +1,125 @@
+.movieImages{
+    width: 20%;
+    margin-left: 3rem;
+    border-radius: 2rem;
+}
+.title-detail{
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.orview-detail{
+    color: white;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-family: monospace;
+}
+.overview{
+    color: white;
+}
+.vote-container {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #b42020;
+    margin-bottom: 10px;
+    overflow: hidden;
+    margin-left: 6rem;
+  }
+
+  .vote-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color:white ;
+    clip: rect(0, 25px, 50px, 0);
+    transform-origin: center right;
+  }
+
+  .vote-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    
+  }
+  .vote-textt{
+    color: white;
+    position: relative;
+    /* left: 0rem; */
+    top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
+.movie-detail {
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%, -50%);margin-top: 2rem;
+  }
+  
+.date-detail{
+    color: white;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+.button-wrapper {
+ margin-top: 3rem;
+  
+
+}
+
+.buttontrainer {
+  margin-right: 50px; /* khoảng cách giữa các nút */
+  border-radius: 1rem;
+  background-color: #c51212;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px; /* độ rộng và chiều cao của nút */
+  
+  &:hover{
+    background-color: rgb(221, 88, 11);
+    cursor: pointer;
+  }
+}
+.buttonplay {
+  background-color: #d72c11;
+  border: none;
+  color: white;
+  padding: 9px 58px;
+  border-radius: 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.buttonplay:hover {
+  background-color: #e0260a; /* Màu nền đậm hơn */
+}
+.buttonplay:active {
+  background-color: #ff2200; /* Màu nền khi click */
+  box-shadow: 0 5px #b32929; /* Hiệu ứng nhấn nút */
+  transform: translateY(4px); /* Hiệu ứng nhấn nút */
+}
+
+.modal-video-inner {
+    padding: 0px 0px;
+    box-sizing: border-box;
+}
+.video-container {
+  display: flex;
+  justify-content: center;
+  padding: 0 2rem;
+  
+  overflow-x: auto;
+}

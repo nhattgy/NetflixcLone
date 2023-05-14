@@ -1,0 +1,51 @@
+.castList {
+  display: flex;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 10rem;
+  gap: 6rem;
+  
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-1200px); }
+}
+
+.castList.animate {
+  animation: slide s linear infinite;
+}
+
+  .h1-cast{
+    color: white;
+    position: relative;
+    top: 5rem;
+    left: 3rem;
+  }
+  .castItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .castImage {
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 1.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .castInfo {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .cast-name{
+    color: white;
+    font-size: 1.9rem;
+  }
+  .cast-character{
+    color: white;
+    font-size: 1.4rem;
+  }

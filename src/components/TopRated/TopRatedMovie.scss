@@ -1,0 +1,136 @@
+// NetflixOriginals.module.scss
+
+
+.moviesContainer {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .movieItem {
+    position: relative;
+    flex: 0 0 auto;
+    width: 16%;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    
+    
+  }
+  
+  .movieImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: filter 0.5s ease;
+    cursor: pointer;
+   
+  }
+  
+  .movieItem:hover .movieImage {
+    filter: brightness(1.2);
+  }
+  
+  .movieItem:hover ~ .movieItem .movieImage {
+    filter: brightness(0.2);
+  }
+  
+  
+  .titlemovie {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  
+  
+  .button-prev {
+    position: absolute;
+    left: 2rem;
+    top: 4rem;
+    background-color: transparent;
+      color: white;
+      font-size: 2rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button-next {
+    position: absolute;
+      right: 7rem;
+      top: 4rem;
+      background-color: transparent;
+      color: white;
+      font-size: 2rem;
+    border: none;
+  cursor: pointer;
+  }
+  .iconreact{
+    background-color: transparent;
+  }
+  .moviesContainer {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .movieItem {
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  
+  .movieItem {
+    position: relative;
+    display: inline-block;
+    width: calc(100% / 6);
+    margin-right: 10px;
+    overflow: hidden;
+    animation: slide-in 0.3s ease-in-out;
+  }
+  
+  @keyframes slide-in {
+    from {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  .movieItem.prev {
+    animation: slide-out-prev 0.4s ease-in-out ;
+  }
+  
+  .movieItem.next {
+    animation: slide-out-next 0.4s ease-in-out ;
+  }
+  
+  @keyframes slide-out-prev {
+    from {
+      opacity: 1;
+      transform: none;
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+  }
+  
+  @keyframes slide-out-next {
+    from {
+      opacity: 1;
+      transform: none;
+    }
+    to {
+      opacity: 0;
+      transform: translateX(50%);
+    }
+  }
+  
