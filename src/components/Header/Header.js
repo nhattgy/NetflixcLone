@@ -57,7 +57,9 @@ const Header = () => {
         </ul>
       </nav>
       <div className="icon">
-        <BiSearch className="icon-header" />
+        <NavLink to="/search">
+          <BiSearch className="icon-header" />
+        </NavLink>
         <IoIosNotifications className="icon-header" />
         <img style={{ width: "30px" }} src={Netflixavatar} alt="avata" />
       </div>

@@ -25,16 +25,16 @@ function MovieVideos({ movie }) {
         <div>
           <h3>Video</h3>
           <div className="video-container">
-            {movie.videos.results.slice(2, 9).map((video) => (
+            {movie.videos.results.slice(2, 8).map((video) => (
               <iframe
-              key={video.id}
-              src={`https://www.youtube.com/embed/${video.key}`}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              title={movie.title}
-              width="300"
-              height="300"
-          />
+                key={video.id}
+                src={`https://www.youtube.com/embed/${video.key}`}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                title={movie.title}
+                width="300"
+                height="300"
+              />
             ))}
           </div>
         </div>
@@ -62,7 +62,6 @@ const MovieDetail = () => {
     const fetchMovieData = async () => {
       const data = await fetchMovie(id);
       setMovie(data);
-      console.log("ne", data);
       if (data.videos && data.videos.results.length > 0) {
         // Retrieve the first video key
         setYoutubeVideoKey(data.videos.results[0].key);
@@ -115,6 +114,9 @@ const MovieDetail = () => {
             videoId={youtubeVideoKey}
             onClose={() => setIsModalOpen(false)}
           />
+          <h1 style={{ color: "white", marginTop: "5rem", marginLeft: "2rem" }}>
+            Review Fun Movie
+          </h1>
           <MovieVideos movie={movie} />
         </>
       )}

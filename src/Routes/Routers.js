@@ -5,6 +5,7 @@ import Films from "../pages/Films/Films";
 import Orginals from "../pages/Orginals/Orginals";
 import TVProgammes from "../pages/TVProgrammes/TVProgammes";
 import MovieDetail from "../pages/MovieDetail/MovieDetail";
+import Search from "../components/Search/Search";
 
 export default function Routers() {
   return (
@@ -14,6 +15,7 @@ export default function Routers() {
       <Route path="/films" element={<Films />} />
       <Route path="/orginals" element={<Orginals />} />
       <Route path="/detail/:id" element={<MovieDetail />} />
+      <Route path="/search" element={<Search />} />
       <Route path="/tv" element={<TVProgammes />} />
     </Routes>
   );
