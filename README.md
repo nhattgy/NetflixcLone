@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+Netflix Clone sử dụng Reactjs và TMDBMOVIE làm API
+Netflix Clone là một trang web được xây dựng bằng Reactjs và sử dụng TMDBMOVIE làm API. Trang web này cho phép người dùng xem phim, tìm kiếm phim và xem thông tin chi tiết của các bộ phim.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Trang chủ
+Trang chủ của Netflix Clone hiển thị một danh sách các bộ phim phổ biến nhất với hình ảnh và tiêu đề của từng bộ phim. Người dùng có thể nhấp vào bất kỳ bộ phim nào để xem thông tin chi tiết về bộ phim đó.
+ ![image](https://github.com/nhattgy/NetflixcLone/assets/95953901/0a4d07fb-08e7-4c66-bc0e-e19679645eb8)
 
-## Available Scripts
 
-In the project directory, you can run:
+Dưới phần trang chủ sẽ có danh phim là Popular On Netflix, Top Rated, Movie Action, Upcoming on Netflix 
+ ![image](https://github.com/nhattgy/NetflixcLone/assets/95953901/e14b34c1-75f3-4648-bff8-2098c9185dae)
 
-### `npm start`
+Thông tin phim
+Trang thông tin phim sẽ cho chúng ta thấy được tên phim , đánh giá , mô tả phim , thông tin diễn viên , và có phần xem trailer của phim
+ ![image](https://github.com/nhattgy/NetflixcLone/assets/95953901/d5753e2c-c08c-4ab4-a0e0-bfb61f7a93e1)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Ta có thể xem phần Trailer của phim 
+ ![image](https://github.com/nhattgy/NetflixcLone/assets/95953901/4b8a9458-4271-46a6-89d4-a3ed69f9f75b)
 
-### `npm test`
+Films
+Trang Films hiển thị một danh sách các bộ phim được phân loại theo thể loại. Người dùng có thể chọn thể loại mong muốn và xem danh sách các bộ phim trong thể loại đó. Tương tự như trang chủ, người dùng có thể nhấp vào bất kỳ bộ phim nào để xem thông tin chi tiết về bộ phim đó.
+ ![image](https://github.com/nhattgy/NetflixcLone/assets/95953901/bc8c870a-ecd1-43d4-b6d0-4d49eb03d899)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Tìm Kiếm
+Trang Tìm Kiếm cho phép người dùng tìm kiếm bộ phim theo từ khóa. Khi người dùng nhập từ khóa và nhấn Enter, danh sách các bộ phim phù hợp sẽ được hiển thị. Người dùng có thể nhấp vào bất kỳ bộ phim nào để xem thông tin chi tiết về bộ phim đó.
+ 
+![image](https://github.com/nhattgy/NetflixcLone/assets/95953901/158b11e5-ffbe-4e6a-be4b-ffbd433b5d2b)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
